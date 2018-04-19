@@ -1,0 +1,12 @@
+.underconstruction{
+  z-index: 5;
+  display: flex;
+  margin: 0 .2em;
+  p{
+    color: cc(overlay, .1);
+    font-size: 1.2rem;
+  }
+  .squiggle{
+    color:cc(overlay, .1);
+  }
+}

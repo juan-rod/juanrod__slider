@@ -1,0 +1,51 @@
+.home{
+    @include heroGrid;
+    overflow-x: hidden;
+    height:100vh;
+    position: relative;
+    width: 100%;
+    perspective: 1200px;
+    transform-style: preserve-3d;
+
+    &__router{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate3d(0, 0, 0);
+        background-color: cc(bg);
+    }
+    &__view{
+        display: flex;
+        justify-content: center;
+        &--introduction{
+            margin: auto;
+            text-align: right;
+            line-height: 1.5;
+            .name{
+                font-size: 2em;
+                border-top: 2px solid cc(secondary);
+                border-right: 2px solid cc(secondary);
+                padding-right: .2em;
+            }
+            .title{
+                border-right: 2px solid cc(secondary);
+                padding-right: .4em;
+            }
+            .location{
+                border-right: 2px solid cc(secondary);
+                padding-right: .4em;
+            }
+            &:hover{
+                @include hover;
+                @include dramaShadow;
+            }
+        }
+    }
+    @media only screen and (min-width: 600px)  {
+        &__router{
+            padding:6em;
+        }
+    }
+}

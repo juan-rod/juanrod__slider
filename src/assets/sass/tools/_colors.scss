@@ -1,0 +1,36 @@
+// colors
+$ghost-white: #fcfdff;
+$a-gray: rgba(221,225,218,1);
+$a-red:rgba(214,32,52,1);
+$a-pink:rgba(222,178,182,1);
+$a-green:rgba(58,98,82,1);
+$a-black:rgba(24,26,27,1);
+$light-gray-blue: #dae4eb;
+$dark-gray-blue: #58585b;
+$smoky-black: #4c4e4d;
+
+// cc map
+$colors:(
+  default:(
+    bg: $a-gray,
+    txt: $smoky-black,
+    primary: $a-red,
+    secondary: $a-pink,
+    third: $a-green,
+    dark: $a-black,
+    shadow: $smoky-black,
+    overlay: $dark-gray-blue,
+    selection: rgba($dark-gray-blue, .33),
+    ghost: $ghost-white
+  )
+
+  // alt:(
+  //   txt: $dark-gray-blue,
+  //   bg: $go-to-gray,
+  //   border: $dark-gray-blue
+  // ),
+
+  // inv:(
+  //   txt: $ghost-white
+  // )
+);

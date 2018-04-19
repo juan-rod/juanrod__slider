@@ -1,0 +1,46 @@
+.router-slide-r-enter-active {
+    -webkit-animation: moveFromRight .6s ease both;
+    animation: moveFromRight .6s ease both;
+    opacity: 1;
+    
+  }
+  .router-slide-r-leave-active {
+    -webkit-animation: moveToLeft .6s ease both;
+    animation: moveToLeft .6s ease both;
+    opacity: 1;
+  }
+  .router-slide-r-enter{
+  }
+  .router-slide-r-leave-to{
+  }
+  .router-slide-l-enter-active {
+    -webkit-animation: moveFromLeft .6s ease both;
+    animation: moveFromLeft .6s ease both;
+    opacity: 1;
+    
+  }
+  .router-slide-l-leave-active {
+    -webkit-animation: moveFromRight .6s ease both;
+    animation: moveFromRight .6s ease both;
+    opacity: 1;
+  }
+  .router-slide-l-enter{
+  }
+  .router-slide-l-leave-to{
+    -webkit-animation: moveToLeft .6s ease both;
+    animation: moveToLeft .6s ease both;
+    opacity: 1;
+  }
+  @keyframes moveToLeft {
+    from { }
+    to { 
+        -webkit-transform: translateX(-100%); 
+        transform: translateX(-100%);
+       }
+  }
+  @keyframes moveFromLeft {
+    from { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+  }
+  @keyframes moveFromRight {
+    from { -webkit-transform: translateX(100%); transform: translateX(100%); }
+  }
